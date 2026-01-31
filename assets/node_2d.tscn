@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://5x27b67oitr3"]
+
+[node name="Node2D" type="Node2D" unique_id=1812610777]
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=187092085]
+offset_left = -56.0
+offset_top = -10.0
+offset_right = 69.0
+offset_bottom = 31.0
+text = "HELLO WORLD"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=839259560]
+position = Vector2(-204, 38)
