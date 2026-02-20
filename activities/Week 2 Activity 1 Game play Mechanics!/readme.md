@@ -26,4 +26,4 @@
 ---
 ## Demo Video
 
-[![Watch the demo](image.png)](https://www.youtube.com/watch?v=RH_-ZIQ7qSM)
+🔗 https://www.youtube.com/watch?v=RH_-ZIQ7qSM
