@@ -22,14 +22,8 @@
   - Short explanation of your implementation
   - Physics tweaks you tested
   - Challenges you encountered
-- [ ] Email me the link to your GitHub project (mention your schedule please)  
-  **My email:** mabaricuatro@usc.edu.ph
 
 ---
+## Demo Video
 
-## Screenshots / Demo
-<span align="center">
-  <video width="1000" controls>
-    <source src="demo.mp4" type="video/mp4">
-  </video>
-</span>
+[![Watch the demo](image.png)](https://www.youtube.com/watch?v=RH_-ZIQ7qSM)
