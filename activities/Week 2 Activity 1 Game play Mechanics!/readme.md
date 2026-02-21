@@ -27,3 +27,5 @@
 ## Demo Video
 
 🔗 https://www.youtube.com/watch?v=RH_-ZIQ7qSM
+
+<span align="center"><img src="image.png" alt="List Array Version 2" width="1000"/></span>
