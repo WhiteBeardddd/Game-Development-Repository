@@ -40,9 +40,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fjrip"]
-radius = 5.0
+radius = 5.0990195
 
 [node name="player" type="CharacterBody2D" unique_id=2096931242]
+z_index = 5
+collision_layer = 2
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=585466436]

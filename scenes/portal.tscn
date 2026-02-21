@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://d2eherusoq2hk"]
+
+[ext_resource type="Script" uid="uid://dow8ysbmh8yjn" path="res://scripts/portal.gd" id="1_1ffj6"]
+[ext_resource type="Texture2D" uid="uid://4dxup67wvqy0" path="res://brackeys_assets/sprites/portal.png" id="2_jr6l0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d4jfq"]
+radius = 264.1212
+
+[node name="portal" type="Area2D" unique_id=35919744]
+script = ExtResource("1_1ffj6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=461327777]
+position = Vector2(1.0000305, 53)
+scale = Vector2(1.0029297, 1)
+texture = ExtResource("2_jr6l0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1067139411]
+position = Vector2(10, 25)
+shape = SubResource("CircleShape2D_d4jfq")
