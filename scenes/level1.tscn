@@ -293,6 +293,16 @@ layer_2/tile_data = PackedInt32Array(196591, 262144, 10, 196592, 262144, 10, 196
 [node name="player" parent="." unique_id=2096931242 instance=ExtResource("3_ejswk")]
 position = Vector2(-357, -33)
 
+[node name="ProgressBar" type="ProgressBar" parent="player" unique_id=1905864574]
+z_index = 5
+anchors_preset = -1
+anchor_top = -0.014
+offset_left = 116.0
+offset_top = -94.0
+offset_right = 178.0
+offset_bottom = -66.0
+value = 100.0
+
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=839259560]
 position = Vector2(1, 6)
 scale = Vector2(0.97541434, -2.0165708)

@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cc818fkmb72f1"]
+
+[ext_resource type="Texture2D" uid="uid://bgwxlbwkce383" path="res://assets/download.png" id="1_bqqt6"]
+[ext_resource type="Script" uid="uid://uicydojeos7c" path="res://scripts/main_menu.gd" id="1_wu84c"]
+[ext_resource type="FontFile" uid="uid://dh2t6adlgfpj0" path="res://brackeys_assets/fonts/PixelOperator8.ttf" id="2_wu84c"]
+[ext_resource type="FontFile" uid="uid://clfgbwraji6xo" path="res://brackeys_assets/fonts/PixelOperator8-Bold.ttf" id="3_8ln24"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rtw2f"]
+texture = ExtResource("1_bqqt6")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa1go"]
+bg_color = Color(5.971873, 5.971873, 5.971873, 0.52156866)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+shadow_size = 5
+shadow_offset = Vector2(5, 3)
+
+[node name="Control" type="Control" unique_id=1734854904]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wu84c")
+
+[node name="Panel" type="Panel" parent="." unique_id=1033693094]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_rtw2f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=296210313]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.75
+offset_top = -158.5
+offset_right = 311.75
+offset_bottom = 158.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 19
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=2065734884]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_oa1go")
+button_mask = 3
+text = "Start Game
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1299538090]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_oa1go")
+button_mask = 3
+text = "Settings"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=200047111]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_wu84c")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_oa1go")
+button_mask = 3
+text = "Quit Game"
+
+[node name="Label" type="Label" parent="." unique_id=867276711]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -248.0
+offset_top = -241.0
+offset_right = 251.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_8ln24")
+theme_override_font_sizes/font_size = 46
+text = "Last SamurKnight
+"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_btn_pressed"]

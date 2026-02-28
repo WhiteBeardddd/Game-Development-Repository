@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bmrnyrpgqekib" path="res://scenes/player.tscn" id="1_d6fun"]
 [ext_resource type="Texture2D" uid="uid://howy5tv2yqcl" path="res://brackeys_assets/sprites/portal_tileset.png" id="2_2k3dv"]
 [ext_resource type="PackedScene" uid="uid://c0o7txcodwa4b" path="res://scenes/killzone.tscn" id="3_2k3dv"]
+[ext_resource type="Script" uid="uid://cwy13jdbjr4dl" path="res://scripts/progress_bar.gd" id="4_hrcei"]
 [ext_resource type="PackedScene" uid="uid://c5d4syonj761y" path="res://scenes/green_slime.tscn" id="5_alqfr"]
 [ext_resource type="PackedScene" uid="uid://6hcge1f1s2or" path="res://scenes/platform.tscn" id="5_yqkch"]
 [ext_resource type="FontFile" uid="uid://dh2t6adlgfpj0" path="res://brackeys_assets/fonts/PixelOperator8.ttf" id="7_6ep0u"]
@@ -295,6 +296,17 @@ limit_top = -9999999
 limit_right = 10000019
 limit_bottom = 121
 position_smoothing_enabled = true
+
+[node name="ProgressBar" type="ProgressBar" parent="player" unique_id=2081819324]
+z_index = 5
+anchors_preset = -1
+anchor_top = -0.014
+offset_left = 116.0
+offset_top = -94.0
+offset_right = 178.0
+offset_bottom = -66.0
+value = 100.0
+script = ExtResource("4_hrcei")
 
 [node name="killzone" parent="." unique_id=338437268 instance=ExtResource("3_2k3dv")]
 position = Vector2(-249, 66)
