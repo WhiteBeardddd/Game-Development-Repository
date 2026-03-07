@@ -270,7 +270,7 @@ _data = {
 
 [node name="level2" type="Node2D" unique_id=1660718990]
 
-[node name="Level2spawn" type="Node2D" parent="." unique_id=1813566254]
+[node name="Level2Spawn" type="Node2D" parent="." unique_id=1813566254]
 position = Vector2(-362, -42)
 
 [node name="TileMap2" type="TileMap" parent="." unique_id=1058771161]

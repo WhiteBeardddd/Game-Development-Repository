@@ -1,5 +1,5 @@
 extends Area2D
-@export var level_2_scene: String = "res://scenes/Level2.tscn"
+@export var level_2_scene: String = "res://scenes/level2.tscn"
 @export var spawn_name: String = "Level2Spawn"
 
 func _ready():
