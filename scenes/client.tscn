@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://ci0xnnb25rr5h"]
+
+[ext_resource type="Script" uid="uid://chan1t1utaxp2" path="res://scripts/client.gd" id="1_5f806"]
+
+[sub_resource type="FontFile" id="FontFile_5f806"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/13/0/ascent = 0.0
+cache/0/13/0/descent = 0.0
+cache/0/13/0/underline_position = 0.0
+cache/0/13/0/underline_thickness = 0.0
+cache/0/13/0/scale = 1.0
+cache/0/14/0/ascent = 0.0
+cache/0/14/0/descent = 0.0
+cache/0/14/0/underline_position = 0.0
+cache/0/14/0/underline_thickness = 0.0
+cache/0/14/0/scale = 1.0
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5f806"]
+
+[sub_resource type="SystemFont" id="SystemFont_1t5vp"]
+
+[node name="Client" type="Control" unique_id=417462575]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5f806")
+
+[node name="Panel" type="Panel" parent="." unique_id=939319903]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 101.0
+offset_right = 259.0
+offset_bottom = 154.0
+
+[node name="UserAccountText" type="Label" parent="Panel" unique_id=1753984616]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 5.0
+offset_right = 225.0
+offset_bottom = 28.0
+text = "User Account"
+
+[node name="DisplayNameText" type="Label" parent="Panel" unique_id=1091807059]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 25.0
+offset_right = 231.0
+offset_bottom = 48.0
+text = "User Account"
+
+[node name="UserAccount" type="Label" parent="Panel" unique_id=258954930]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 5.0
+offset_right = 118.0
+offset_bottom = 28.0
+text = "User Account :"
+
+[node name="DisplayName" type="Label" parent="Panel" unique_id=1422949816]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 25.0
+offset_right = 122.0
+offset_bottom = 48.0
+text = "Display Name :"
+
+[node name="Panel2" type="Panel" parent="." unique_id=1988863947]
+layout_mode = 0
+offset_left = 15.000002
+offset_top = 13.000011
+offset_right = 321.8536
+offset_bottom = 93.14833
+scale = Vector2(0.9809237, 0.9856724)
+
+[node name="Email" type="Label" parent="Panel2" unique_id=1472784152]
+layout_mode = 0
+offset_left = 40.77789
+offset_top = 13.188975
+offset_right = 152.7779
+offset_bottom = 36.188976
+text = "Email :"
+
+[node name="Password" type="Label" parent="Panel2" unique_id=1521310016]
+layout_mode = 0
+offset_left = 10.194472
+offset_top = 41.595978
+offset_right = 126.19447
+offset_bottom = 64.59598
+text = "Password :"
+
+[node name="EmailInput" type="LineEdit" parent="Panel2" unique_id=1070037447]
+layout_mode = 0
+offset_left = 100.92528
+offset_top = 6.087223
+offset_right = 179.89069
+offset_bottom = 37.087227
+scale = Vector2(2.4399993, 1)
+theme_override_fonts/font = SubResource("FontFile_5f806")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/focus = SubResource("StyleBoxFlat_5f806")
+text = "test@gmail.com"
+
+[node name="PasswordInput" type="LineEdit" parent="Panel2" unique_id=557043468]
+layout_mode = 0
+offset_left = 101.94473
+offset_top = 39.566902
+offset_right = 180.91014
+offset_bottom = 70.5669
+scale = Vector2(2.4399993, 1)
+theme_override_fonts/font = SubResource("SystemFont_1t5vp")
+theme_override_font_sizes/font_size = 14
+text = "password123"
+secret = true
+
+[node name="LoginButton" type="Button" parent="Panel2" unique_id=1128623275]
+layout_mode = 0
+offset_left = 316.02866
+offset_top = 20.290703
+offset_right = 448.5568
+offset_bottom = 62.901196
+text = "Submit
+"
+
+[node name="Panel3" type="Panel" parent="." unique_id=1005837771]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 166.0
+offset_right = 245.0
+offset_bottom = 304.0
+
+[node name="StoreData" type="Button" parent="Panel3" unique_id=2145682399]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 14.0
+offset_right = 138.0
+offset_bottom = 47.0
+text = "Store Data"
+
+[node name="GetData" type="Button" parent="Panel3" unique_id=427440212]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 52.0
+offset_right = 138.0
+offset_bottom = 85.0
+text = "Get data from store"
+
+[node name="ListData" type="Button" parent="Panel3" unique_id=1054353848]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 89.0
+offset_right = 183.0
+offset_bottom = 122.0
+text = "List data from store"
+
+[node name="Panel4" type="Panel" parent="." unique_id=18778956]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 107.0
+offset_right = 605.0
+offset_bottom = 278.0
+
+[node name="Label" type="Label" parent="Panel4" unique_id=741726886]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 16.0
+offset_right = 123.0
+offset_bottom = 39.0
+text = "Match Name:"
+
+[node name="LineEdit" type="LineEdit" parent="Panel4" unique_id=779451081]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 13.0
+offset_right = 317.0
+offset_bottom = 44.0
+
+[node name="JoinCreateMatch" type="Button" parent="Panel4" unique_id=162159513]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 50.0
+offset_right = 292.0
+offset_bottom = 81.0
+text = "Join / Create"
+
+[node name="Label2" type="Label" parent="Panel4" unique_id=699137597]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 139.0
+offset_right = 125.0
+offset_bottom = 162.0
+text = "Ping:"
+
+[node name="ping" type="Button" parent="Panel4" unique_id=1753048002]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 134.0
+offset_right = 174.0
+offset_bottom = 165.0
+text = "Ping"
+
+[node name="ReadyButton" type="Button" parent="Panel4" unique_id=829449150]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 88.0
+offset_right = 282.0
+offset_bottom = 119.0
+text = "READY"
+
+[connection signal="button_down" from="Panel2/LoginButton" to="." method="_on_login_button_button_down"]
+[connection signal="button_down" from="Panel3/StoreData" to="." method="_on_store_data_button_down"]
+[connection signal="button_down" from="Panel3/GetData" to="." method="_on_get_data_button_down"]
+[connection signal="button_down" from="Panel3/ListData" to="." method="_on_list_data_button_down"]
+[connection signal="button_down" from="Panel4/JoinCreateMatch" to="." method="_on_join_create_match_button_down"]
+[connection signal="button_down" from="Panel4/ping" to="." method="_on_ping_button_down"]
+[connection signal="button_down" from="Panel4/ReadyButton" to="." method="_on_ready_button_button_down"]

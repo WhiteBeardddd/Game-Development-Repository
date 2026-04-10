@@ -24,6 +24,9 @@ driver/driver="Dummy"
 
 GameManager="*uid://c3vib4p5wfadv"
 Music="*uid://dy5ta5ltb2olj"
+Nakama="*uid://cesv68f7a2h1h"
+Global="*uid://duimr7b7gpnip"
+Client="*uid://chan1t1utaxp2"
 
 [input]
 

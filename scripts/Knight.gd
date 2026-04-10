@@ -2,6 +2,8 @@
 # Attach to your CharacterBody2D root node
 class_name Knight extends CharacterBody2D
 
+# Add at the top of Knight.gd with your other vars
+@onready var sync = $MultiplayerSynchronizer  # add this node in the scene
 # --- Tunable Stats ---
 @export var speed        := 180.0
 @export var jump_velocity:= -400.0

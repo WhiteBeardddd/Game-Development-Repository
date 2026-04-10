@@ -413,5 +413,3 @@ theme_override_font_sizes/font_size = 8
 text = "portal to next level"
 
 [node name="Map" type="Node" parent="." unique_id=1682467048]
-
-[node name="Players" type="Node2D" parent="." unique_id=830330993]
